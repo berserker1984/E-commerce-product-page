@@ -5,40 +5,241 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./assets/style.css">
   
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+   
   </style>
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <div class="container ">
 
-  Sneaker Company
+      
 
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <!--Inicio menu-->
   
-  <div class="attribution">
+  <nav  class="navbar">
+    <div class="caixa-menu-principal">
+
+      <div class="caixa-menu-esqueda">
+        <div>
+          <img id="abre-Menu" onclick="exibirMenu()" class="img-icone-menu" src="./assets/images/icon-menu.svg" alt="">    
+        </div>
+        <div>
+          <img class="img-logo" src="./assets/images/logo.svg" alt="">
+        </div>        
+      </div>
+
+      <ul  id="menu" class="navbar-nav menu-itens esconder">
+
+        <div class="caixa-menu">
+          <div class="icone-fechar">
+            <img id="fecha-Menu" onclick="fecharMenu()" src="./assets/images/icon-close.svg" alt="">
+          </div>
+          
+          <div>
+            <li class="nav-item"><a class="nav-link"  href="#">Collections</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#">Men</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#">Women</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link"  href="#">Contact</a></li>    
+          </div>  
+
+        </div>
+
+      </ul>
+      <div class="caixa-menu-direita">
+        <div>
+          <img class="img-cart" src="./assets/images/icon-cart.svg" alt="">
+        </div>
+        <div>
+          <img class="img-avatar" src="./assets/images/image-avatar.png" alt="">
+        </div>
+      </div>
+    </div>
+  </nav>   
+
+  <!--Fim menu-->
+
+    
+    <div id="principal">
+
+     
+      
+       <div class="caixa-elementos-produto ">
+
+  <!--Inicio carrinho itens-->
+      
+      <div class="caixa-card esconder">
+        
+
+        <div class="card">
+          <div class="container-card">
+            <div class="titulo-cartao">
+              <h2>Cart</h2>
+            </div>
+
+            <div class="barra"></div>
+            
+            <div class="caixa-conteudo-card">
+
+              
+
+              <div class="caixa-conteudo2-card">
+
+                <div class="caixa-img-card">
+                  <img src="./assets/images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                
+                <div class="caixa-nome-produto-card">
+                  <h3>Fall Limited Edition Sneakers</h3>
+                  <div class="caixa-valores-card">
+                    <div>$<span>125.00 x 3</span></div>
+                    <div>$<strong>375.00</strong></div>
+                  </div>    
+                </div>
+
+                <div class="caixa-icone-delete-card">
+                  <img src="./assets/images/icon-delete.svg" alt="">
+                </div>               
+              </div>             
+
+            </div>
+            
+            <div class="caixa-btn-card">
+              <button>Checkout</button>
+            </div>
+          </div>
+        </div>
+  
+    
+         
+        </div>
+  
+  <!--Fim carrinho itens-->
+
+
+  <!--Inicio carrinho itens-->
+
+  <!--Inicio carrinho vazio-->
+      
+  <div class="caixa-card esconder">
+        
+
+    <div class="card">
+      <div class="container-card">
+        <div class="titulo-cartao">
+          <h2>Cart</h2>
+        </div>
+
+        <div class="barra"></div>
+        
+        <div class="caixa-conteudo-card">
+          <div class="empty">
+            <h3>Your cart is empty.</h3>
+          </div>
+        </div>
+        
+       
+      </div>
+    </div>
+
+
+     
+    </div>
+
+<!--Fim carrinho vazio-->
+
+    
+    <!--Inicio imagem principal-->
+
+        <div id="img-produto-principal" class="  caixa-imagem-produto">
+          <div class="caixa-principal-setas">
+            <div id="preview-product" onclick="clickPreview()" class="caixa-seta">
+              <img src="./assets/images/icon-previous.svg" alt="">
+            </div>
+            <div id="next-product" onclick="clickNext()" class="caixa-seta">
+              <img src="./assets/images/icon-next.svg" alt="">
+            </div>
+         </div>
+          <!--<img id="img-produto-principal" class="imagem-produto" src="./assets/images/image-product-1.jpg" alt="">-->
+        </div>
+        
+      </div>
+
+    <!--Fim imagem principal-->
+
+
+     <!--Inicio conteudo 1-->
+
+  <main>
+    <div class="conteudo-principal">
+    
+      <div class="conteudo1">
+        <h1>SNEAKER COMAPANY</h1>
+
+        <h2>Fall Limited Edition Sneakers</h2>
+    
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      </div>
+
+     <!--Fim conteudo 1-->
+
+     <!--Inicio conteudo 2-->
+
+     <div class="conteudo2">
+      
+      <div class="valores">
+        <div class="caixa-total-desc">
+          <div class="item-valor-total">$<span id="valor-total">0</span></div>
+          <div class="item-desconto"><span id="desconto">50</span>%</div>
+        </div>
+        <div class="item-preco-un">$<span id="valor-item">250.00</span></div>
+      </div>
+  
+      <div class="quantidade">
+        <div onclick="setaMenos()" ><img src="./assets/images/icon-minus.svg" alt=""></div>
+        <div id="quantidade-itens">0</div>
+        <div onclick="setaMais()" ><img src="./assets/images/icon-plus.svg" alt=""></div>
+      </div>
+      
+      <div class="caixa-btn">        
+        <button>Add to cart</button>
+      </div>
+
+      </div>
+
+      <!--fim conteudo 2-->
+
+    </div>
+    
+
+  </main>
+    </div>
+
+  <footer>
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  </footer>
+  </div>
+
+
+  
+ 
+
+  
+  
+  <script src="./assets/code.js"></script>
 </body>
 </html>

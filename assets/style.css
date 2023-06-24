@@ -1,0 +1,398 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and  (max-width: 428px) {
+    
+    body{
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .esconder{
+        display: none;
+    }
+
+    .caixa-menu-principal{
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around;       
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        
+       
+        
+        
+    }
+
+    .caixa-menu-esqueda{
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .caixa-menu-direita{
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+   
+    
+    .img-cart{
+        margin-left: 60px;
+    }
+    
+    .img-avatar{       
+        height: 40px;
+        width: auto;      
+    }
+
+    .menu-itens{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70vw;
+        background-color: white;        
+    }
+    
+    .menu-itens a{
+        text-decoration: none;
+        color: hsl(220, 13%, 13%);
+        font-weight: 700;
+    }
+
+    .caixa-menu{
+        padding: 20px;
+    }
+
+    .icone-fechar{
+        margin-bottom: 40px;
+    } 
+    
+    .caixa-elementos-produto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        
+    }
+
+    .card{        
+        border-radius: 20px;
+    }
+
+   
+
+   .caixa-card{       
+        position: absolute;
+        top: 0; 
+        margin-top: 8px;
+        width: 95%;
+        
+      
+   }
+
+    .container-card{
+        width: 100%;
+        height: auto;
+ 
+    }
+
+    .barra{
+        border-bottom: 1px solid  hsl(220, 14%, 75%);
+    }
+
+    .titulo-cartao {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding-left: 20px;
+     
+    }
+
+    .titulo-cartao h2{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .caixa-conteudo-card{
+        display: flex;
+        flex-direction: row;              
+        padding-left: 20px;
+        height: auto;
+    }
+
+    .empty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 190px;
+    }
+
+    .empty h3{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .caixa-img-card{
+        display: flex;
+        align-items: center;
+        width: 60px;
+    }
+
+    .caixa-img-card img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .caixa-conteudo2-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        gap: 15px;
+    }
+
+    .caixa-conteudo-card h3{
+        font-size: 16px;
+    }
+     
+    .caixa-valores-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+        
+
+    .caixa-icone-delete-card{
+        display: flex;
+        align-items: center;
+        width: 10%;
+        height: auto;
+    }
+
+    .caixa-btn-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;              
+        padding: 0px 20px 20px 20px;
+    }
+    
+    .caixa-btn-card button{
+        width: 100%;
+        height: 50px;
+        border: 1px none;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        background-color: hsl(26, 100%, 55%);
+    }
+
+    .caixa-imagem-produto{
+        display: none;
+        display: flex;
+        justify-content: center;
+        place-items:top ;
+        width: 100%;
+        height: 280px;
+        background-image: url("images/image-product-1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+        
+    }
+    
+   
+    .caixa-principal-setas{       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    .caixa-seta{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        border: 1px solid none;
+        border-radius: 50%;
+        background-color: white;  
+    }
+ 
+    
+    main{       
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;      
+        
+    }
+
+    .conteudo1 h1{
+        font-size: 16px;
+        color: hsl(26, 100%, 55%);
+        font-weight: 700;
+        margin-bottom: 20px;
+
+    }
+
+    .conteudo1 h2{
+        font-weight: 700;
+        margin-bottom: 20px;
+
+    }
+
+    .conteudo1 p{
+        font-size: 16px;
+        margin-bottom: 20px;
+
+    }
+
+   
+    .efeito-pos-menu{
+        opacity: 0.3;
+    }
+    
+    .retira-efeito-pos-menu{
+        opacity: 1;
+    }
+
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+       
+    }
+
+    .conteudo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+   
+   
+   
+    
+
+    .valores{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .caixa-total-desc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        
+    }
+
+
+    .item-valor-total{
+        font-size: 26px;
+        font-weight: bold;
+
+    }
+
+    .item-desconto{
+        font-size: 16px;
+        font-weight: bold;
+        background-color: hsl(25, 100%, 94%);
+        color: hsl(26, 100%, 55%);
+        padding: 5px;
+
+    }
+
+    .item-preco-un{
+        font-size: 16px;
+        font-weight: bold;
+        color: hsl(220, 14%, 75%);  
+    }
+
+    .quantidade{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        height: 50px;
+        background-color: hsl(223, 64%, 98%);
+    }
+
+    .caixa-btn{             
+        width: 100%;
+        
+        
+    }
+
+   
+ 
+
+    .caixa-btn button{
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        border: 1px  none;
+        border-radius: 15px;   
+        background-color: hsl(26, 100%, 55%);
+        background-image: url('images/icon-cart-btn.svg');
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+        background-position-y: 50%;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+
+        
+    }
+
+       
+    
+}
